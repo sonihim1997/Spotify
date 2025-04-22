@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Clone</title>
+<link rel="website icon" type="png" href="./img/logo.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+<div class="menu-bar">
+<h1>Playlist</h1>
+<div class="playlist">
+    <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+    <h4 ><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+    <h4 ><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+</div>
+<div class="menu-songs">
+    <li class="songItem">
+        <span>01</span>
+        <img src="./covers/1.jpg" alt="Padman" >
+        <h5>Aaj Se Teri-Padman
+        <div class="subtitle">Arijit Singh</div>
+        </h5> 
+        <i class="bi playListPlay bi-play-fill" id="1"></i>
+    </li>
+    <li class="songItem">
+        <span>02</span>
+        <img src="./covers/2.jpg" alt="Aankh Marey" >
+        <h5>Aankh Marey
+        <div class="subtitle">Neha Kakkar, 
+            Mika Singh , Kumar Sanu</div>
+            </h5> 
+        <i class="bi playListPlay bi-play-fill" id="2"></i>
+    </li>
+    <li class="songItem">
+        <span>03</span>
+        <img src="./covers/3.jpg" alt="Raazi" >
+        <h5>Ae Watan - Raazi
+        <div class="subtitle">Arijit Singh</div>
+        </h5> 
+        <i class="bi playListPlay bi-play-fill" id ="3"></i>
+    </li>
+    <li class="songItem">
+        <span>04</span>
+        <img src="./covers/4.jpg" alt="Dhadak" >
+        <h5>Dhadak
+        <div class="subtitle">Ajay Atul , Shreya Ghosal</div>
+        </h5> 
+        <i class="bi playListPlay bi-play-fill" id="4"></i>
+    </li>
+    <li class="songItem">
+        <span>05</span>
+        <img src="./covers/5.jpg" alt="Jogi" >
+        <h5>Jogi-Shaadi Me Zaroor Aana
+        <div class="subtitle">Yasser Desai</div>
+        </h5> 
+        <i class="bi playListPlay bi-play-fill" id="5"></i>
+        </li>
+    <li class="songItem">
+        <span>06</span>
+        <img src="./covers/6.jpg" alt="Paisa" >
+        <h5>Paisa Yeh Paisa
+        <div class="subtitle">Dev Nagi , Subhro Ganguly</div>
+        </h5> 
+        <i class="bi playListPlay bi-play-fill" id="6"></i>
+        </li>
+    <li class="songItem">
+        <span>07</span>
+        <img src="./covers/7.jpg" alt="Suit" >
+        <h5>Suit Suit
+        <div class="subtitle">Guru Randhawa</div>
+        </h5> 
+        <i class="bi playListPlay bi-play-fill" id="7"></i>
+        </li>
+    <li class="songItem">
+        <span>08</span>
+        <img src="./covers/8.jpg" alt="Tera Fitoor" >
+        <h5>Tera Fitoor
+        <div class="subtitle">Arijit Singh</div>
+        </h5> 
+        <i class="bi playListPlay bi-play-fill" id="8"></i>
+        </li>
+    </div>
+</div>
+<div class="song-bar">
+<nav>
+    <ul>
+        <li>DISCOVER<span></span></li>
+        <li>LIBERARY</li>
+        <li>RADIO</li>
+    </ul>
+    <div class="search">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Search Music...">
+    </div>
+    <div class="user"><img src="./img/logo.png" alt="User" title="Spotify Clone">
+    </div>
+</nav>
+<div class="content">
+    <h1>90s - songs</h1>
+    <p>In the 90s it was one of the most indescribable decades of all time. This era consisted of fashion statements, food, culture, and most importantly it was the years of awesome music.</p>
+    <div class="button">
+        <button>PLAY</button>
+        <button>FOLLOW</button>
+    </div>
+</div>
+<div class="popular-song">
+    <div class="h4">
+        <h4>Popular Song</h4>
+        <div class="btn-s">
+            <i class="bi bi-arrow-left-short" id ="pop_song_left"></i>
+            <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+        </div>
+    </div>
+    <div class="pop-song">
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/9.jpg" alt="Hum Naa Rahein Hum">
+                <i class="bi playListPlay bi-play-fill" id="9"></i>
+            </div>
+            <h5>Hum Naa Rahein Hum
+                <div class="subtitle">Benny Dayal</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/10.jpg" alt="Coca">
+                <i class="bi playListPlay bi-play-fill" id="10"></i>
+            </div>
+            <h5>Coca Cola
+                <div class="subtitle">Tony Kakkar , Neha Kakkar</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/11.jpg" alt="Dil">
+                <i class="bi playListPlay bi-play-fill" id="11"></i>
+            </div>
+            <h5>Dil Diyan Gallan
+                <div class="subtitle">Atif Aslam</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/12.jpg" alt="Naina">
+                <i class="bi playListPlay bi-play-fill" id="12"></i>
+            </div>
+            <h5>Naina Ashq na ho
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/13.jpg" alt="Chhichhore">
+                <i class="bi playListPlay bi-play-fill" id="13"></i>
+            </div>
+            <h5>Khairiyat - Chhichhore
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/14.jpg" alt="Bhuj">
+                <i class="bi playListPlay bi-play-fill" id="14"></i>
+            </div>
+            <h5>Desh Mere - Bhuj
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/15.jpg" alt="Dhokha">
+                <i class="bi playListPlay bi-play-fill" id="15"></i>
+            </div>
+            <h5>Dhokha
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/16.jpg" alt="Tera Yaar">
+                <i class="bi playListPlay bi-play-fill" id="16"></i>
+            </div>
+            <h5>Tera Yaar Hu Main
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/17.jpg" alt="ABCD2">
+                <i class="bi playListPlay bi-play-fill" id="17"></i>
+            </div>
+            <h5>Chunar - ABCD2
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/18.jpg" alt="Jagga Jassos">
+                <i class="bi playListPlay bi-play-fill" id="18"></i>
+            </div>
+            <h5>Galti Se Mistake - Jagga Jassos
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/19.jpg" alt="Adhuri">
+                <i class="bi playListPlay bi-play-fill" id="19"></i>
+            </div>
+            <h5>Adhuri
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/20.jpg" alt="Traffic">
+                <i class="bi playListPlay bi-play-fill" id="20"></i>
+            </div>
+            <h5>Traffic
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/21.jpg" alt="Villain">
+                <i class="bi playListPlay bi-play-fill" id="21"></i>
+            </div>
+            <h5>Villain
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/22.jpg" alt="Mere Yaaraa">
+                <i class="bi playListPlay bi-play-fill" id="22"></i>
+            </div>
+            <h5>Mere Yaaraa
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/23.jpg" alt="Befikre">
+                <i class="bi playListPlay bi-play-fill" id="23"></i>
+            </div>
+            <h5>Befikre
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+            </li>
+        <li class="songItem">
+            <div class="img-play">
+                <img src="./covers/24.jpg" alt="Tamasha">
+                <i class="bi playListPlay bi-play-fill" id="24"></i>
+            </div>
+            <h5>Tamasha
+                <div class="subtitle">Arijit Singh</div>
+            </h5> 
+        </li>
+                <li class="songItem">
+                    <div class="img-play">
+                        <img src="./covers/25.jpg" alt="Pachtaoge">
+                        <i class="bi playListPlay bi-play-fill" id="25"></i>
+                    </div>
+                    <h5>Pachtaoge
+                        <div class="subtitle">Arijit Singh</div>
+                    </h5> 
+                    </li>
+        </li>
+                <li class="songItem">
+                    <div class="img-play">
+                        <img src="./covers/26.jpg" alt="Mungda Mungda">
+                        <i class="bi playListPlay bi-play-fill" id="26"></i>
+                    </div>
+                    <h5>Mungda Mungda
+                        <div class="subtitle">Jyotica Tangri, Shaan, Subhro Ganguly</div>
+                    </h5> 
+                    </li>
+        </li>
+                <li class="songItem">
+                    <div class="img-play">
+                        <img src="./covers/27.jpg" alt="Hauli Hauli">
+                        <i class="bi playListPlay bi-play-fill" id="27"></i>
+                    </div>
+                    <h5>Hauli Hauli
+                        <div class="subtitle">Garry Sandhu, Neha Kakkar</div>
+                    </h5> 
+                    </li>
+    </div>
+    </div>
+    <div class="popular-artists">
+        <div class="h4">
+            <h4>Popular Artists</h4>
+            <div class="btn-s">
+                <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+            </div>
+        </div>
+        <div class="item Artists_bx">
+            
+                <li>
+                    <img src="./Spotify/img/Diljit_Dosanjh.jpg" alt="Diljit_Dosanjh" title="Diljit_Dosanjh">
+                </li>
+                <li>
+                    <img src="./Spotify/img/guru.jpg" alt="guru" title="Guru Randhawa">
+                </li>
+                <li>
+                    <img src="./Spotify/img/honey.jpg" alt="honey" title="Honey">
+                </li>
+                <li>
+                    <img src="./Spotify/img/jubin Nautiyal.jpg" alt="jubin Nautiyal" title="jubin Nautiyal">
+                </li>
+                <li>
+                    <img src="./Spotify/img/9.jpg" alt="Dilbar" title="Dilbar">
+                </li>
+                <li>
+                    <img src="./Spotify/img/10.jpg" alt="Luka Chuppi" title="Luka Chuppi">
+                </li>
+                <li>
+                    <img src="./covers/14.jpg" alt="Bhuj" title="Desh Mere">
+                </li>
+                <li>
+                    <img src="./covers/15.jpg" alt="Dhokha" title="Dhokha">
+                </li>
+                <li>
+                    <img src="./covers/16.jpg" alt="Sonu ke Titu Ki Sweety" title="Tera Yaar Hoon Main">
+                </li>
+                <li>
+                    <img src="./covers/17.jpg" alt="Jagga Jassos" title="Galti Se Mistake">
+                </li>
+                <li>
+                    <img src="./covers/19.jpg" alt="Raazi" title="Raazi">
+                </li>
+                <li>
+                    <img src="./Spotify/img/7.jpg" alt="Tamasha" title="Tamasha">
+                </li>
+                <li>
+                    <img src="./Spotify/img/8.jpg" alt="Sanak" title="Sanak">
+                </li>
+                <li>
+                    <img src="./Spotify/img/9.jpg" alt="Dilbar" title="Dilbar">
+                </li>
+                <li>
+                    <img src="./Spotify/img/10.jpg" alt="Luka Chuppi" title="Luka Chuppi">
+                </li>
+                <li>
+                    <img src="./Spotify/img/11.jpg" alt="Lagdi" title="Lagdi Lahore Di">
+                </li>
+                <li>
+                    <img src="./Spotify/img/13.jpg" alt="Atif Aslam" title="Atif Aslam">
+                </li>
+                <li>
+                    <img src="./Spotify/img/14.jpg" alt="Vaaste" title="Vaaste">
+                </li>
+                <li>
+                    <img src="./Spotify/img/15.jpg" alt="Lut Gaye" title="Lut Gaye">
+                </li>
+                <li>
+                    <img src="./Spotify/img/16.jpg" alt="Meri Zindagi Hai" title="Meri Zindagi Hai" title="pasoori">
+                </li>
+                <li>
+                    <img src="./Spotify/img/17.jpg" alt="Rahat Fateh Ali Khan" title="Rahat Fateh Ali Khan">
+                </li>
+                <li>
+                    <img src="./Spotify/img/atif.jpg" alt="Atif" title="Atif">
+                </li>
+                <li>
+                    <img src="./Spotify/img/Dhvani.jpg" alt="Dhvani" title="Dhvani">
+                </li>
+                <li>
+                    <img src="./Spotify/img/18.jpg" alt="Pasoori" title="pasoori">
+                </li>
+                <li>
+                    <img src="./Spotify/img/neha.jpg" alt="Neha" title="Neha">
+                </li>
+        </div>
+    </div>
+</div>
+
+<div class="masterplay">
+<div class="wave" id="wave">
+    <div class="wave1"></div>
+    <div class="wave1"></div>
+    <div class="wave1"></div>
+</div>
+<img src="./covers/1.jpg" alt="" id="poster_master_play">
+<h5 id="title">
+    Aaj Se Teri-Padman <br>
+    <div class="subtitle">Arijit Singh</div>
+    </h5>
+    <div class="icon">
+        <i class="bi bi-music-note-beamed" id="gif"></i>
+        <i class="bi bi-skip-start-fill" id="back"></i>
+        <i class="bi bi-play-fill" id="masterPlay"></i>
+        <i class="bi bi-skip-end-fill" id="next"></i>
+        <!-- <i class="bi bi-cloud-arrow-down-fill" id="download"></i> -->
+    </div>
+    <span id="currentStart">0:00</span>
+    <div class="bar">
+        <input type="range" id="seek" min="
+        0" value="30" max="100">
+        <div class="bar2" id="bar2"></div>
+        <div class="dot"></div>
+    </div>
+    <span id="currentEnd">0:00</span>
+    <div class="vol">
+    <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+    <input type="range" min="0" value="30" max="100" id="vol">
+    <div class="vol_bar"></div>
+    <div class="dot" id="vol_dot"></div>
+    </div>  
+</div>
+</header>
+<script src="./script.js"></script>
+</body>
+</html>
