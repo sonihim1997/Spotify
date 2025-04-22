@@ -256,7 +256,7 @@ header .masterplay .bar .dot{
     transition: .1s linear;
 }
 header .masterplay .bar .dot::before{
-    /* content: ''; */
+    content: '';
     position: absolute;
     width: 15px;
     height: 15px;
